@@ -52,6 +52,18 @@
 				</section>
 				
 				<section>
+					<h2>Attributions</h2>
+					<ul>
+						<li>Dan Grossman</li>
+						<li>Venkat Subramaniam</li>
+            <li>Mario Gleichman</li>
+						<li>Jim McBeath</li>
+						<li>Martin Odersky</li>
+            <li>and many more ...</li>
+					</ul>
+				</section>
+        
+				<section>
 					<h2>Why Scala?</h2>
 					<ol>
 						<li>Runs on JVM</li>
@@ -93,7 +105,8 @@
 						<li>Apple</li>
 						<li>Klout</li>
 						<li>Tumblr</li>
-						<li>eBay</li>            
+						<li>Coursera</li>            
+						<li>eBay</li>
           </ul>
 				</section>
         
@@ -140,6 +153,18 @@ meivarutha kooli tharum""")
         </section>
         
 				<section>
+					<h2>def</h2>
+					<pre>
+					  <code data-trim lang="scala" contenteditable style="font-size: 28px; margin-top: 20px;">
+					    def f = 3 
+					  </code>
+					  <code data-trim contenteditable style="font-size: 28px; margin-top: 20px;">
+              def square: Int => Int = x => x * x
+					  </code>
+					</pre>
+				</section>
+
+				<section>
 					<h2>REPL - Your best friend!</h2>
 					<ol>
 						<li>:help</li>
@@ -149,6 +174,26 @@ meivarutha kooli tharum""")
 						<li>:imports</li>
 					</ol>
 				</section>
+
+				<section>
+					<h2>Call by Value / Name</h2>
+          <p>Evaluation Strategies</p>
+          <p>Name is evaluated by replacing the right hand side of the definition</p>
+          <p> .... till it evaluates to a value</p>
+          <p>Let's look at substituition model</p>
+				  <code data-trim contenteditable style="font-size: 28px; margin-top: 20px;">
+            def sumOfSquares(x:Int, y:Int)= square(x) + square (y)
+            
+            def test(x:Int, y:Int) = x * x
+				  </code>
+				</section>
+        
+				<section>
+					<h2>Call by Value / Name</h2>
+          <p>Call by Value has the advantage of evaluating function argument only once</p>
+          <p>Call by Name has the advantage of not evaluating function argument if not used</p>
+				</section>
+
 				
 				<section>
 					<h2>Types</h2>
