@@ -159,7 +159,7 @@ meivarutha kooli tharum""")
 					    def f = 3 
 					  </code>
 					  <code data-trim contenteditable style="font-size: 28px; margin-top: 20px;">
-              def square: Int => Int = x => x * x
+              def square: Int =&gt; Int = x =&gt; x * x
 					  </code>
 					</pre>
 				</section>
@@ -178,14 +178,19 @@ meivarutha kooli tharum""")
 				<section>
 					<h2>Call by Value / Name</h2>
           <p>Evaluation Strategies</p>
+          <ul>
           <p>Name is evaluated by replacing the right hand side of the definition</p>
           <p> .... till it evaluates to a value</p>
           <p>Let's look at substituition model</p>
+          </ul>
+          <pre>
 				  <code data-trim contenteditable style="font-size: 28px; margin-top: 20px;">
-            def sumOfSquares(x:Int, y:Int)= square(x) + square (y)
-            
-            def test(x:Int, y:Int) = x * x
+def sumOfSquares(x:Int, y:Int)= square(x) + square (y)
+					  </code>
+					  <code data-trim contenteditable style="font-size: 28px; margin-top: 20px;">
+def test(x:Int, y:Int) = x * x
 				  </code>
+        </pre>
 				</section>
         
 				<section>
